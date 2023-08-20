@@ -5,16 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent                  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    LandingPageModule
+    LandingPageModule,
+    AuthModule
   ],
   bootstrap: [AppComponent]
 })
